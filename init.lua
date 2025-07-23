@@ -37,3 +37,4 @@ vim.schedule(function()
 end)
 
 vim.o.scrolloff = 8
+vim.o.relativenumber = true
