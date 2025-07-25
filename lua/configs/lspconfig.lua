@@ -10,7 +10,7 @@ lspconfig.servers = {
 }
 
 -- list of servers configured with default config.
-local default_servers = { "cssls", "html", "rust_analyzer" }
+local default_servers = { "cssls", "html", "rust_analyzer", "bashls", }
 
 -- lsps with default config
 for _, lsp in ipairs(default_servers) do
