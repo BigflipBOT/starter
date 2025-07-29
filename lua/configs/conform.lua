@@ -4,7 +4,21 @@ local options = {
         css = { "prettier" },
         html = { "prettier" },
         bash = { "shfmt" },
+        c = { "clang-format" },
+        cpp = { "clang-format" },
     },
+
+    formatters = {
+        ["clang-format"] = {
+            prepend_args = {
+                "-style={ \
+                IndentWidth: 4, \
+                TabWidth: 4, \
+                UseTab: Never, \
+                AccessModifierOffset: 0}"
+            }
+        }
+    }
 
     -- format_on_save = {
     --   -- These options will be passed to conform.format()

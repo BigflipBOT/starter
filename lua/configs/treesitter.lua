@@ -3,6 +3,7 @@ local options = {
         "bash",
         "c",
         "cpp",
+        "cmake",
         -- "fish",
         "jq",
         "lua",
