@@ -6,6 +6,7 @@ local options = {
         bash = { "shfmt" },
         c = { "clang-format" },
         cpp = { "clang-format" },
+        xml = { "lemminx" }
     },
 
     formatters = {
@@ -17,7 +18,15 @@ local options = {
                 UseTab: Never, \
                 AccessModifierOffset: 0}"
             }
-        }
+        },
+        -- ["xmlformatter"] = {
+        --     prepend_args = {
+        --         "--indent",
+        --         "4",
+        --         "--selfclose",
+        --         "--correct",
+        --     }
+        -- }
     }
 
     -- format_on_save = {
