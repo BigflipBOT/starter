@@ -6,10 +6,12 @@ local options = {
         bash = { "shfmt" },
         c = { "clang-format" },
         cpp = { "clang-format" },
-        xml = { "lemminx" }
+        xml = { "lemminx" },
+        python = {"isort", "black" },
     },
 
     formatters = {
+        -- C
         ["clang-format"] = {
             prepend_args = {
                 "-style={ \
@@ -18,6 +20,20 @@ local options = {
                 UseTab: Never, \
                 AccessModifierOffset: 0}"
             }
+        },
+        -- Python
+        black = {
+            prepend_args = {
+                "--fast",
+                "--line-length",
+                "100",
+            },
+        },
+        isort = {
+            prepend_args = {
+                "--profile",
+                "black",
+            },
         },
         -- ["xmlformatter"] = {
         --     prepend_args = {

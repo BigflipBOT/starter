@@ -11,6 +11,7 @@ local options = {
         "make",
         "markdown",
         "printf",
+        "python",
         "rust",
         "sway",
         "toml",
