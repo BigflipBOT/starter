@@ -6,7 +6,7 @@ local options = {
         bash = { "shfmt" },
         c = { "clang-format" },
         cpp = { "clang-format" },
-        xml = { "lemminx" },
+        -- xml = { "lemminx" },
         python = {"isort", "black" },
     },
 
